@@ -1,0 +1,28 @@
+name: accessibility_service
+description: "The plugin provides a unified interface that wraps native accessibility APIs."
+version: 0.0.1
+homepage: https://github.com/yaroslav13/accessibility_service.git
+issue_tracker: https://github.com/yaroslav13/accessibility_service/issues
+
+environment:
+  sdk: ^3.10.7
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.accessibility.service.accessibility_service
+        pluginClass: AccessibilityServicePlugin
+      ios:
+        pluginClass: AccessibilityServicePlugin
